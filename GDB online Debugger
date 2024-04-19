@@ -1,0 +1,69 @@
+1) Faça um programa que:
+1.Leia a primeira nota
+2.Validar se a nota é válida
+3.Leia a segunda nota
+4.Validar se a nota é válida
+5.Execute a média
+6.Executa a média no console
+
+ex 1:
+
+
+program Media;
+var nota1, nota2:integer;
+med:real;
+
+begin writeln ('Programa pra calculo da media entre 2 notas.');
+writeln ('Insira a primeira nota: ');
+readln (nota1);
+
+if (nota1>10) then
+  writeln('Nota inválida (maior que 10)');
+
+
+writeln ('Insira a segunda nota: ');
+readln (nota2);
+
+med:= (nota1 + nota2) / 2;
+write ('A média obtida é ', med: 0:1);
+(*writeln (med);*)
+ end.
+
+-----------------------------------------------------------------------
+
+
+ex 2:
+
+
+program Media;
+var nota1, nota2:integer;
+med:real;
+
+begin writeln('Programa pra calculo da media entre 2 notas.');
+write ('Insira a primeira nota: ');
+readln (nota1);
+
+if (nota1 <= 10) AND (nota1 >= 0) then
+    begin
+    
+        write ('Insira a segunda nota: ');
+        readln (nota2);
+        if (nota2<=10) AND (nota2>=0) then
+            begin
+                med:=(nota1 + nota2) / 2;
+        write ('A média obtida é ', med:0:1);
+            end
+            else
+                write('Nota 2 inválida');
+end
+else
+    writeln('Nota 1 inválida');
+end.
+
+
+--------------------------------------------------------------------
+
+
+ex 3:
+
+
